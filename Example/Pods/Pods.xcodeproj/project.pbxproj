@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00775446FF6C22EBF27C6B5652D8B40B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		00A2749F46C967ED4725A32357E3FB1B /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285165C60E3FFD1133525F6E0045741 /* ConstraintLayoutSupport.swift */; };
 		00DAD2602AA51BA292E1BC008FBE141A /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF776EF7B520BCC9D1E22157E4EF10E /* Texture.swift */; };
 		03085A4D3D5BE3071E99AE13D0CC7D03 /* TextAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCFC6CFAD10433CADC87D82CD37D7AE /* TextAnimationLayer.swift */; };
@@ -167,7 +166,7 @@
 		98E9C12EF0965C838873A9F6D123C0B1 /* Passthrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC0E54E757F9FD85265C712AF96B4C /* Passthrough.swift */; };
 		98F570DA48370453D648BD526FDAAEAA /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A59526B2D7D0B39324BEC4B2743A41 /* LayoutConstraintItem.swift */; };
 		99D123362DB5E34BB6554DF86612FAD0 /* LKS_HierarchyDetailsHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EADAC2EB749D6EDF6EF743E0EF3C3A2 /* LKS_HierarchyDetailsHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C34E423B6FA7AC95AE0B47EFAACA35A /* Pods-VideoLab_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6A0CBA76A2D987DCE40E9CA235B9E5E /* Pods-VideoLab_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C34E423B6FA7AC95AE0B47EFAACA35A /* Pods-VideoLab_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B2076A6451749051D4C1AF9C2F4DDCD /* Pods-VideoLab_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9C9548E8B4675954566202F7B87FF0E6 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ABF28A1E12D0F62200C0574DEFF7A7 /* ConstraintConstantTarget.swift */; };
 		9E02CFFEFE1BEC978B512286F03D31DA /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED04FA88F9D43A2895F02CECFA3C3ED /* ConstraintInsetTarget.swift */; };
 		A02C22A42AC239C3F17ED84BC59E7A6B /* RenderComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F71E1231D13A405D9239C9B9F24DA4F /* RenderComposition.swift */; };
@@ -196,12 +195,11 @@
 		B7B5CFFC399099D36B60DF3256F7713E /* TimingFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F838A30BF273D9D89E89389CC75FCC8 /* TimingFunction.swift */; };
 		B9620A8F74F5F14282F65B4D20DA2EE9 /* AudioRenderLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3AD388778D2870F6D4DECE6DE6766B /* AudioRenderLayer.swift */; };
 		BA0B5D652B7C46A5CBAB8DD5600841C2 /* LookinObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 20689F98BBAA3D4FD063589973E53A6E /* LookinObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB99D496D596EAD0CA77659D545126DB /* Pods-VideoLab_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 547A037FDC034D0556815D470CDE78BE /* Pods-VideoLab_Example-dummy.m */; };
+		BB99D496D596EAD0CA77659D545126DB /* Pods-VideoLab_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7805A6953D6EBCDA4B7D76985C9242 /* Pods-VideoLab_Example-dummy.m */; };
 		BC6B5DBAAAE279A7FF669A3DA0506684 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
 		BCCED184234649D45324D05A872E9300 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E254F3143D2DE392569C089505406AE /* Window.swift */; };
 		BD1BFF9A06BDFC1FDD855487EB54BDA5 /* LKS_AttrModificationPatchHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = F40F6FDEDC765F9945204736CCF5C6F5 /* LKS_AttrModificationPatchHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD47CB74CD9B2B4D2D942C9B65748DFB /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F762D3F82DB683C7B180781F709F31B /* SnapKit-dummy.m */; };
-		BD7AB41BF3866FF60372F41A7E458278 /* Pods-VideoLab_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98C3A1A2FA55FF000CF01A88B65CD744 /* Pods-VideoLab_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2F49CCD8CF765D821A65DE9614B0957 /* LookinAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A6C5D5976077C9C7725F8ECD7427AEA /* LookinAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3AD8AA8C4FE8F5245771012FD87B396 /* BlendOperation.metal in Sources */ = {isa = PBXBuildFile; fileRef = D9FDE8510E9C14D1D8616F27EF2C2973 /* BlendOperation.metal */; };
 		C54B40E7AF46330EF9342B78645BC271 /* MetalRenderingDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84468F22277E724AF69A60BBED9B4812 /* MetalRenderingDevice.swift */; };
@@ -230,7 +228,6 @@
 		D4FBC927D9BE85854154D035BC90F9F4 /* UIImageView+LookinServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F630F3360E46AD22579D6A9DC10F7B17 /* UIImageView+LookinServer.m */; };
 		D5CDDCBF33CC03592FB786D3F8020E91 /* LookinWeakContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = EBC1646E5B2040D81AF07756786585A5 /* LookinWeakContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5E45DD66CDCB80B90E87E4D589BE3A2 /* LKS_HierarchyDisplayItemsMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BA3BFAE2F428BD383D0953EE75C4AA6 /* LKS_HierarchyDisplayItemsMaker.m */; };
-		D6033891BF0874345C1E6B96DD18E84B /* Pods-VideoLab_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D40DF8C86563A495C4015E2DE2F2E300 /* Pods-VideoLab_Tests-dummy.m */; };
 		D67D6E5A8C67310AE01AD699B2D746EC /* LookinServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B09982594C7E0389C195A5CFC5AF17 /* LookinServer-dummy.m */; };
 		D8666E74AB90D08409A0868C75644001 /* LookinEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E4806C6844534FADAD9439579BCBED48 /* LookinEventHandler.m */; };
 		D89B48F6B3E6447590AE09C2E15FE5C5 /* LookinIvarTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EA7057960C92D9DFB1CB0DAFFBBF9AB /* LookinIvarTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -288,13 +285,6 @@
 			remoteGlobalIDString = 638FEAAFC575BB76BC6AC055CDDA3506;
 			remoteInfo = LookinServer;
 		};
-		3D10352D7D0EB1D98A9CFA96E497F526 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A788278E713EEC517380E3C6AA693DB9;
-			remoteInfo = "Pods-VideoLab_Example";
-		};
 		797D4972C10DB3BFFB944E42B58A427C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -350,15 +340,14 @@
 		1182FBF411D3B5AFB701DE7B2D47DB93 /* LookinAttributeModification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinAttributeModification.h; path = Src/Shared/LookinAttributeModification.h; sourceTree = "<group>"; };
 		123C5B97E93C8FE678F7068F14C014A2 /* PKHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUD.swift; path = PKHUD/PKHUD.swift; sourceTree = "<group>"; };
 		126484DDF6482A06197305F6455DA180 /* LKS_MethodTraceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_MethodTraceManager.h; path = Src/Server/Others/LKS_MethodTraceManager.h; sourceTree = "<group>"; };
-		14416CEA0E098543961E6A24250C7687 /* Pods-VideoLab_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoLab_Example.modulemap"; sourceTree = "<group>"; };
 		14E7B362CB168CFD78B4EB989FD0CBEC /* LookinConnectionAttachment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinConnectionAttachment.h; path = Src/Shared/LookinConnectionAttachment.h; sourceTree = "<group>"; };
-		15C96A63BBFD5E689C25EDE8883793C8 /* Pods-VideoLab_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		175EB9E959CF1E06938E1217988D641F /* LookupFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LookupFilter.swift; sourceTree = "<group>"; };
 		17B490E87336A9EFEAE5169817FC5C8C /* LookinAttributeModification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinAttributeModification.m; path = Src/Shared/LookinAttributeModification.m; sourceTree = "<group>"; };
 		17FD3DD80A3EC5821D2949D2809848DB /* CALayer+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+LookinServer.m"; path = "Src/Server/Category/CALayer+LookinServer.m"; sourceTree = "<group>"; };
 		188AD21BD410159218AB8782315C6CD9 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Sources/ConstraintPriority.swift; sourceTree = "<group>"; };
 		19F8972A94B309A74023990DC90ACE7B /* CALayer+Lookin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+Lookin.h"; path = "Src/Shared/Category/CALayer+Lookin.h"; sourceTree = "<group>"; };
 		1A6C5D5976077C9C7725F8ECD7427AEA /* LookinAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinAttribute.h; path = Src/Shared/LookinAttribute.h; sourceTree = "<group>"; };
+		1C03D43A1495060E78B8943F52F32901 /* Pods-VideoLab_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoLab_Example.modulemap"; sourceTree = "<group>"; };
 		1C9646F48655738BAA7E2163F64EF99D /* LookinDisplayItemDetail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinDisplayItemDetail.h; path = Src/Shared/LookinDisplayItemDetail.h; sourceTree = "<group>"; };
 		1DE080B505B807FCAB8C5356FDAEDD15 /* NSString+Lookin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Lookin.m"; path = "Src/Shared/Category/NSString+Lookin.m"; sourceTree = "<group>"; };
 		1EA7057960C92D9DFB1CB0DAFFBBF9AB /* LookinIvarTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinIvarTrace.h; path = Src/Shared/LookinIvarTrace.h; sourceTree = "<group>"; };
@@ -414,7 +403,6 @@
 		46FE5CBAFB5FE2F6BA73039955A5D764 /* UITextField+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+LookinServer.m"; path = "Src/Server/Category/UITextField+LookinServer.m"; sourceTree = "<group>"; };
 		474EF47FD8256E43BDCA43EBEAFF2DD4 /* LookinDisplayItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinDisplayItem.m; path = Src/Shared/LookinDisplayItem.m; sourceTree = "<group>"; };
 		4836C8C26C1020BB693F1F97D2EF0CF0 /* LookinAttributesSection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinAttributesSection.m; path = Src/Shared/LookinAttributesSection.m; sourceTree = "<group>"; };
-		485DF978C439EA0C1CCBDCC540823586 /* Pods-VideoLab_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-VideoLab_Tests"; path = Pods_VideoLab_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A332A10B179F1B1519CAB0E9AD91080 /* PKHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.release.xcconfig; sourceTree = "<group>"; };
 		4A3D96CA7B915961DF6E89AD610C2725 /* LKS_PerspectiveHierarchyCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveHierarchyCell.h; path = Src/Server/Perspective/LKS_PerspectiveHierarchyCell.h; sourceTree = "<group>"; };
 		4A87FF62395F5B901580EA32D0F5265F /* LookinTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinTuple.m; path = Src/Shared/LookinTuple.m; sourceTree = "<group>"; };
@@ -427,16 +415,14 @@
 		4F762D3F82DB683C7B180781F709F31B /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		50A24169E70C33EF6187D1BB5B51B658 /* LKS_TraceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_TraceManager.m; path = Src/Server/Others/LKS_TraceManager.m; sourceTree = "<group>"; };
 		5140E4B028CE277AE81833F098869034 /* PKHUDAssets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDAssets.swift; path = PKHUD/PKHUDAssets.swift; sourceTree = "<group>"; };
+		52DD32389424213D0430878826116FCE /* Pods-VideoLab_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoLab_Example-frameworks.sh"; sourceTree = "<group>"; };
 		535341C97BE3657DFDDBCF4B73BAC82C /* LKS_MethodTraceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_MethodTraceManager.m; path = Src/Server/Others/LKS_MethodTraceManager.m; sourceTree = "<group>"; };
 		5383D1D72DCAF8AD5E0CCF9DFB195C19 /* PKHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PKHUD-dummy.m"; sourceTree = "<group>"; };
 		53A928F6415E1C96575291A189546E34 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		53C9A9B966874BA66146A5465FB66F31 /* LookinServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LookinServer.debug.xcconfig; sourceTree = "<group>"; };
 		542F8BB69B7550A5BC5A89501D47FA19 /* Peertalk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Peertalk.h; path = Src/Shared/Peertalk/Peertalk.h; sourceTree = "<group>"; };
-		547A037FDC034D0556815D470CDE78BE /* Pods-VideoLab_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoLab_Example-dummy.m"; sourceTree = "<group>"; };
-		5483997C6CBEFBA9BC53D9A87DDDF09D /* Pods-VideoLab_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		54B6F420B6998B2073446852B4D3DD2F /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Sources/ConstraintConfig.swift; sourceTree = "<group>"; };
 		55A3AE4A25C3CFF04BCC1E95F9073465 /* LookinMsgTargetAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinMsgTargetAction.h; path = Src/Shared/Message/LookinMsgTargetAction.h; sourceTree = "<group>"; };
-		566DD7435C2561045B02D4585829896B /* Pods-VideoLab_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Example-Info.plist"; sourceTree = "<group>"; };
 		566FAE2BA89386C8E17326D506FFC173 /* PKHUDRotatingImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDRotatingImageView.swift; path = PKHUD/PKHUDRotatingImageView.swift; sourceTree = "<group>"; };
 		57B063A4A0B4E164FFD9BCEBECB341DF /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Sources/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
 		599F1FF2E09FC59B05E0902D9ADAD54D /* Lookin_PTProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Lookin_PTProtocol.h; path = Src/Shared/Peertalk/Lookin_PTProtocol.h; sourceTree = "<group>"; };
@@ -447,7 +433,6 @@
 		5DA99130F605ED2B59D3AA39C420FC24 /* LKS_PerspectiveHierarchyView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_PerspectiveHierarchyView.m; path = Src/Server/Perspective/LKS_PerspectiveHierarchyView.m; sourceTree = "<group>"; };
 		5DBFD00EFAAB1BCDD0D22DBE8B6F4026 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
 		5EADAC2EB749D6EDF6EF743E0EF3C3A2 /* LKS_HierarchyDetailsHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_HierarchyDetailsHandler.h; path = Src/Server/Connection/RequestHandler/LKS_HierarchyDetailsHandler.h; sourceTree = "<group>"; };
-		5F5F2927AEABAEBDC0E9E8D3FC9372FA /* Pods-VideoLab_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Tests-Info.plist"; sourceTree = "<group>"; };
 		5F70202618590F711614F6E2DCC34652 /* FrameView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameView.swift; path = PKHUD/FrameView.swift; sourceTree = "<group>"; };
 		609C0814E30C6AE5B2904C4EB05952D2 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Sources/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		612C8CE233408BF3C392070A431C23D1 /* VideoLab.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VideoLab.modulemap; sourceTree = "<group>"; };
@@ -456,6 +441,9 @@
 		664AA418925937726902A9B8EB563689 /* LKS_PerspectiveViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_PerspectiveViewController.m; path = Src/Server/Perspective/LKS_PerspectiveViewController.m; sourceTree = "<group>"; };
 		670898246BEF84E5B6DC137E26081142 /* LookinMethodTraceRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinMethodTraceRecord.h; path = Src/Shared/LookinMethodTraceRecord.h; sourceTree = "<group>"; };
 		68F88093F07CA5864B759C70CED1572A /* UIImage+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+LookinServer.m"; path = "Src/Server/Category/UIImage+LookinServer.m"; sourceTree = "<group>"; };
+		690B9E17AD5A79149AF7661B29A37F12 /* Pods-VideoLab_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Example-Info.plist"; sourceTree = "<group>"; };
+		6A0E0F4CD52799D811B934478E75377A /* Pods-VideoLab_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Example.release.xcconfig"; sourceTree = "<group>"; };
+		6BF96B8DA7210931832799067C7AEC8A /* Pods-VideoLab_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6C9E6AF67868ECEBBCCDF9BD090A8958 /* PKHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PKHUD.debug.xcconfig; sourceTree = "<group>"; };
 		6D5AFA1B4695132FC856959EBE9645BF /* PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PKHUD-Info.plist"; sourceTree = "<group>"; };
 		6E6DFDB7D363E8F3130EE8CA391D174D /* Lookin_PTUSBHub.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Lookin_PTUSBHub.m; path = Src/Shared/Peertalk/Lookin_PTUSBHub.m; sourceTree = "<group>"; };
@@ -474,6 +462,7 @@
 		78CEE91B52A7918CFCE6F8517A85CA24 /* PKHUDErrorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDErrorView.swift; path = PKHUD/PKHUDErrorView.swift; sourceTree = "<group>"; };
 		7A8DE68C97E20EBC1097F6AB1300E217 /* UIVisualEffectView+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIVisualEffectView+LookinServer.h"; path = "Src/Server/Category/UIVisualEffectView+LookinServer.h"; sourceTree = "<group>"; };
 		7B3AD388778D2870F6D4DECE6DE6766B /* AudioRenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AudioRenderLayer.swift; sourceTree = "<group>"; };
+		7B7805A6953D6EBCDA4B7D76985C9242 /* Pods-VideoLab_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoLab_Example-dummy.m"; sourceTree = "<group>"; };
 		7B8E04221B3EB3B8E74CCF54E52AC7CE /* Lookin_PTProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Lookin_PTProtocol.m; path = Src/Shared/Peertalk/Lookin_PTProtocol.m; sourceTree = "<group>"; };
 		7CC143E0A4A13034B207C607AE0D9234 /* LookinAutoLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinAutoLayoutConstraint.m; path = Src/Shared/LookinAutoLayoutConstraint.m; sourceTree = "<group>"; };
 		7D36E42E087EC8AD186E77DFD19AAC7D /* LKS_PerspectiveToolbarButtons.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_PerspectiveToolbarButtons.m; path = Src/Server/Perspective/LKS_PerspectiveToolbarButtons.m; sourceTree = "<group>"; };
@@ -486,9 +475,9 @@
 		83B0A706699E173755123CAFEEB11C78 /* LookinAppInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinAppInfo.h; path = Src/Shared/LookinAppInfo.h; sourceTree = "<group>"; };
 		84468F22277E724AF69A60BBED9B4812 /* MetalRenderingDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MetalRenderingDevice.swift; sourceTree = "<group>"; };
 		8710CA4FF3CCF5C80F4939C285D46C86 /* LookinAttrIdentifiers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinAttrIdentifiers.m; path = Src/Shared/LookinAttrIdentifiers.m; sourceTree = "<group>"; };
-		873ED94228A7F2D0FA6CFC47983FDDDB /* Pods-VideoLab_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoLab_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		896C62671FF8F2A32C50EF32AC93BB9B /* ConstraintMakerRelatable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintMakerRelatable+Extensions.swift"; path = "Sources/ConstraintMakerRelatable+Extensions.swift"; sourceTree = "<group>"; };
 		898003175A11C4D17889C02DEE8CCCE4 /* LookinScreenshotFetchManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinScreenshotFetchManager.h; path = Src/Shared/LookinScreenshotFetchManager.h; sourceTree = "<group>"; };
+		8B2076A6451749051D4C1AF9C2F4DDCD /* Pods-VideoLab_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoLab_Example-umbrella.h"; sourceTree = "<group>"; };
 		8BA335B03F1C4FEBA4E1F7560359DED3 /* HUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HUD.swift; path = PKHUD/HUD.swift; sourceTree = "<group>"; };
 		8BADE5BFB36B3529F08E2EBAF40508E7 /* LKS_HierarchyDetailsHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_HierarchyDetailsHandler.m; path = Src/Server/Connection/RequestHandler/LKS_HierarchyDetailsHandler.m; sourceTree = "<group>"; };
 		8C5C87B7EA944AD41BF4EA9579C5D597 /* BlendModeConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BlendModeConstants.h; sourceTree = "<group>"; };
@@ -497,7 +486,6 @@
 		8EDB3F20E11573CEC907F080F9A978CE /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Sources/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		8EF776EF7B520BCC9D1E22157E4EF10E /* Texture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
 		8FCFC6CFAD10433CADC87D82CD37D7AE /* TextAnimationLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextAnimationLayer.swift; sourceTree = "<group>"; };
-		8FF89E04D31908555CA8534259A4AD52 /* Pods-VideoLab_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VideoLab_Tests.modulemap"; sourceTree = "<group>"; };
 		90D67A3FAB663DF478BDA2213F3B466B /* LKS_ObjectRegistry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_ObjectRegistry.m; path = Src/Server/Others/LKS_ObjectRegistry.m; sourceTree = "<group>"; };
 		94F27109964BA8A9DC2C3CCCE53612C5 /* UIViewController+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+LookinServer.h"; path = "Src/Server/Category/UIViewController+LookinServer.h"; sourceTree = "<group>"; };
 		95039FBBF7054D583E065FD6003DEDD0 /* LKS_PerspectiveManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_PerspectiveManager.m; path = Src/Server/Perspective/LKS_PerspectiveManager.m; sourceTree = "<group>"; };
@@ -507,7 +495,6 @@
 		97948D5FDD7223E87815719CA99AF316 /* UITextView+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+LookinServer.h"; path = "Src/Server/Category/UITextView+LookinServer.h"; sourceTree = "<group>"; };
 		9867CAC260A450FA8745BE05F8D59435 /* BlendOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BlendOperation.swift; sourceTree = "<group>"; };
 		988F14B183BB3DB56CC47F79A210FD57 /* README-CN.md */ = {isa = PBXFileReference; includeInIndex = 1; path = "README-CN.md"; sourceTree = "<group>"; };
-		98C3A1A2FA55FF000CF01A88B65CD744 /* Pods-VideoLab_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoLab_Tests-umbrella.h"; sourceTree = "<group>"; };
 		98F6CB808009729C5980881FD69B46F5 /* LookinMsgAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinMsgAttribute.h; path = Src/Shared/Message/LookinMsgAttribute.h; sourceTree = "<group>"; };
 		99667CC1266C6E6D54A30135C0AC018F /* Lookin_PTChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Lookin_PTChannel.h; path = Src/Shared/Peertalk/Lookin_PTChannel.h; sourceTree = "<group>"; };
 		998B63CDDCF5380368B514C962559B1E /* VideoLab.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VideoLab.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -525,21 +512,18 @@
 		A18C8BC729C7DEC123040CF8A4F2C516 /* LKS_Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_Helper.h; path = Src/Server/Others/LKS_Helper.h; sourceTree = "<group>"; };
 		A19F5FF247D3F9D1E99D66E74972D5AE /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Sources/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		A3E3C410299599287FD377C91E755C42 /* ZoomBlur.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ZoomBlur.swift; sourceTree = "<group>"; };
-		A4006845EC16763C8CD1B91FCF94BF5C /* Pods-VideoLab_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A54A9728C052658DE70992B51397F582 /* LookinIvarTrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinIvarTrace.m; path = Src/Shared/LookinIvarTrace.m; sourceTree = "<group>"; };
 		A56E169AA8944725335731438C262FD7 /* UILabel+LookinServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+LookinServer.m"; path = "Src/Server/Category/UILabel+LookinServer.m"; sourceTree = "<group>"; };
-		A6A0CBA76A2D987DCE40E9CA235B9E5E /* Pods-VideoLab_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoLab_Example-umbrella.h"; sourceTree = "<group>"; };
 		A7EBF3B4ED067ED9D459B1AC95F828A8 /* UIImage+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+LookinServer.h"; path = "Src/Server/Category/UIImage+LookinServer.h"; sourceTree = "<group>"; };
-		A801EC913CE490FADF7A969F49AEF17B /* Pods-VideoLab_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AC9CD289F23FED12F61529BE76C9F79C /* ImageSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
 		ADAB1D617BC0F38A29F0FC861598F5BB /* BrightnessAdjustment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrightnessAdjustment.swift; sourceTree = "<group>"; };
+		AE256A5CB3509565B3127D73D00D1E50 /* Pods-VideoLab_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoLab_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AE3A05305847817966A53ACECCE70F5E /* LKS_ObjectRegistry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_ObjectRegistry.h; path = Src/Server/Others/LKS_ObjectRegistry.h; sourceTree = "<group>"; };
 		AE83D23C43949696E01CAC150561F58A /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Sources/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
 		AED04FA88F9D43A2895F02CECFA3C3ED /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Sources/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		AF12849FB9CC68CF2D3A928032DB6E62 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Sources/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		AF9A8973368A68500C4C035ADAC0C206 /* LKS_PerspectiveDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveDataSource.h; path = Src/Server/Perspective/LKS_PerspectiveDataSource.h; sourceTree = "<group>"; };
 		B0127C3B43101E927FFF43C826537627 /* PHAssetImageSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PHAssetImageSource.swift; sourceTree = "<group>"; };
-		B155ED92B5A077E06FA9B1AC9672DC6F /* Pods-VideoLab_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B1EAB293DAA254131782B3AF17FAE057 /* AVAssetSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AVAssetSource.swift; sourceTree = "<group>"; };
 		B2BFEFFCE041C9D666BE780C21537FD2 /* TextureCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextureCache.swift; sourceTree = "<group>"; };
 		B39310618D980E42993B19461411B3E8 /* LookinWeakContainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinWeakContainer.m; path = Src/Shared/LookinWeakContainer.m; sourceTree = "<group>"; };
@@ -582,14 +566,13 @@
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		D249C448080B66BA0DE5B89443CDC6C4 /* LookinAttrType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinAttrType.h; path = Src/Shared/LookinAttrType.h; sourceTree = "<group>"; };
 		D26246E2C4EBD1EB602EE509A43AD492 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		D40DF8C86563A495C4015E2DE2F2E300 /* Pods-VideoLab_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoLab_Tests-dummy.m"; sourceTree = "<group>"; };
 		D6511A4BFFD2CE88A258E8D79A82A16B /* VideoLab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VideoLab.swift; path = VideoLab/VideoLab.swift; sourceTree = "<group>"; };
 		D9275B231D2E5FA3025BBC15DE5E2866 /* LKS_PerspectiveHierarchyView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LKS_PerspectiveHierarchyView.h; path = Src/Server/Perspective/LKS_PerspectiveHierarchyView.h; sourceTree = "<group>"; };
 		D9CF9AD76670E13332383CEDD3377EE7 /* ResourceBundle-PKHUDResources-PKHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PKHUDResources-PKHUD-Info.plist"; sourceTree = "<group>"; };
 		D9FDE8510E9C14D1D8616F27EF2C2973 /* BlendOperation.metal */ = {isa = PBXFileReference; includeInIndex = 1; path = BlendOperation.metal; sourceTree = "<group>"; };
 		DBC7B10961558C676F56191F22BA0F23 /* CALayer+LookinServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+LookinServer.h"; path = "Src/Server/Category/CALayer+LookinServer.h"; sourceTree = "<group>"; };
 		DC52F932232A40F0C874BD6AC4F47C34 /* LKS_RequestHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_RequestHandler.m; path = Src/Server/Connection/LKS_RequestHandler.m; sourceTree = "<group>"; };
-		DE62B45CD271EF3BFBD805CC0D1EE924 /* Pods-VideoLab_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoLab_Example.release.xcconfig"; sourceTree = "<group>"; };
+		DF38DDCB5FF6CA48F52B5853AB966DA6 /* Pods-VideoLab_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoLab_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		DF53A287CF9D26F5B5AC76059AAEE037 /* LookinMethodTraceRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LookinMethodTraceRecord.m; path = Src/Shared/LookinMethodTraceRecord.m; sourceTree = "<group>"; };
 		E1F1DBBABA866F52E71A1503D2C3C629 /* LKS_LocalInspectPanelLabelView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LKS_LocalInspectPanelLabelView.m; path = Src/Server/Inspect/LKS_LocalInspectPanelLabelView.m; sourceTree = "<group>"; };
 		E29B38E36D27D1F7ADDB384C4D0156F5 /* ShaderUniformSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShaderUniformSettings.swift; sourceTree = "<group>"; };
@@ -626,11 +609,9 @@
 		F8629DC91F5B2695FC01EDFAF36926B3 /* PKHUDSystemActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKHUDSystemActivityIndicatorView.swift; path = PKHUD/PKHUDSystemActivityIndicatorView.swift; sourceTree = "<group>"; };
 		F8C96A16FFA84F5860BC7185BFBA7A17 /* PHAssetVideoSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PHAssetVideoSource.swift; sourceTree = "<group>"; };
 		FA320EBF633A7D5CFDC9828EF7DC7A8E /* Passthrough.metal */ = {isa = PBXFileReference; includeInIndex = 1; path = Passthrough.metal; sourceTree = "<group>"; };
-		FA521E2B4F116EE69D9F56ECE673ED9E /* Pods-VideoLab_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoLab_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FAB623DC058FFF30E75FF12E70C3BF25 /* LookinCodingValueType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookinCodingValueType.h; path = Src/Shared/LookinCodingValueType.h; sourceTree = "<group>"; };
 		FACC6536B26065ADE183E2D3C10C43C5 /* BrightnessAdjustment.metal */ = {isa = PBXFileReference; includeInIndex = 1; path = BrightnessAdjustment.metal; sourceTree = "<group>"; };
 		FB41D91E7334090CF02FC5AC06AFF2D7 /* Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
-		FBD59F7E97631FD18CD03EB58B12151A /* Pods-VideoLab_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoLab_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FCAE40AA8094844F2D0427B2F6FC6469 /* VideoCompositor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoCompositor.swift; sourceTree = "<group>"; };
 		FD5CA8AF5278408C0C9295535AF905CD /* NSArray+Lookin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Lookin.m"; path = "Src/Shared/Category/NSArray+Lookin.m"; sourceTree = "<group>"; };
 		FD9A4C5159599785D079DEEC40FA78DA /* VideoLab */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VideoLab; path = VideoLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -653,14 +634,6 @@
 			files = (
 				BC6B5DBAAAE279A7FF669A3DA0506684 /* Foundation.framework in Frameworks */,
 				DDC450E2D22CCF77A89E59F37D496C8E /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6A2BC2449943EF1839F440C6C6229CA4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00775446FF6C22EBF27C6B5652D8B40B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -910,20 +883,6 @@
 			path = VideoLab/Source;
 			sourceTree = "<group>";
 		};
-		2CF4162A0894115F0EBCC99D8E0E3E57 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				25664483ABF4DC8EC03E7472AA04333B /* LookinServer */,
-				05A2656F46E8CA87E77A035911B33D10 /* PKHUD */,
-				BFCB2D5C605270A32522299AED3B5AE6 /* PKHUD-PKHUDResources */,
-				374E9D9ED181931B96AA13E41366BA94 /* Pods-VideoLab_Example */,
-				485DF978C439EA0C1CCBDCC540823586 /* Pods-VideoLab_Tests */,
-				979486118B3E90C08386079D57962701 /* SnapKit */,
-				FD9A4C5159599785D079DEEC40FA78DA /* VideoLab */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		3358B19B8D5A7F00EE01A386B365F558 /* Video */ = {
 			isa = PBXGroup;
 			children = (
@@ -947,6 +906,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4870DFE93BB502B9E499C0A684C6688D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25664483ABF4DC8EC03E7472AA04333B /* LookinServer */,
+				05A2656F46E8CA87E77A035911B33D10 /* PKHUD */,
+				BFCB2D5C605270A32522299AED3B5AE6 /* PKHUD-PKHUDResources */,
+				374E9D9ED181931B96AA13E41366BA94 /* Pods-VideoLab_Example */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+				FD9A4C5159599785D079DEEC40FA78DA /* VideoLab */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -962,6 +934,14 @@
 				B26D644D8E22CD1A89AE761FFAD95B50 /* VideoLab */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		780CEDFECB0CE5BFDBD31A1DDF186D69 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3A886A1AA3CBDBE8AF07C1ED9BF901F /* Pods-VideoLab_Example */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		8F79E51B7212550DC00E6CEB301DBCEC /* Operations */ = {
@@ -988,23 +968,6 @@
 			);
 			name = Operations;
 			path = Operations;
-			sourceTree = "<group>";
-		};
-		9431FEF2ADC954B620317CD29DF26BD3 /* Pods-VideoLab_Example */ = {
-			isa = PBXGroup;
-			children = (
-				14416CEA0E098543961E6A24250C7687 /* Pods-VideoLab_Example.modulemap */,
-				FA521E2B4F116EE69D9F56ECE673ED9E /* Pods-VideoLab_Example-acknowledgements.markdown */,
-				A4006845EC16763C8CD1B91FCF94BF5C /* Pods-VideoLab_Example-acknowledgements.plist */,
-				547A037FDC034D0556815D470CDE78BE /* Pods-VideoLab_Example-dummy.m */,
-				FBD59F7E97631FD18CD03EB58B12151A /* Pods-VideoLab_Example-frameworks.sh */,
-				566DD7435C2561045B02D4585829896B /* Pods-VideoLab_Example-Info.plist */,
-				A6A0CBA76A2D987DCE40E9CA235B9E5E /* Pods-VideoLab_Example-umbrella.h */,
-				5483997C6CBEFBA9BC53D9A87DDDF09D /* Pods-VideoLab_Example.debug.xcconfig */,
-				DE62B45CD271EF3BFBD805CC0D1EE924 /* Pods-VideoLab_Example.release.xcconfig */,
-			);
-			name = "Pods-VideoLab_Example";
-			path = "Target Support Files/Pods-VideoLab_Example";
 			sourceTree = "<group>";
 		};
 		952A904263C325CFC3E995E8EAD86600 /* PKHUD */ = {
@@ -1034,15 +997,6 @@
 			path = PKHUD;
 			sourceTree = "<group>";
 		};
-		A9355A43CA97CAA77B596292C8F1DC59 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9431FEF2ADC954B620317CD29DF26BD3 /* Pods-VideoLab_Example */,
-				E990AC13DDEE2BD6C47EEF1C628866E4 /* Pods-VideoLab_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		B26D644D8E22CD1A89AE761FFAD95B50 /* VideoLab */ = {
 			isa = PBXGroup;
 			children = (
@@ -1067,6 +1021,23 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		B3A886A1AA3CBDBE8AF07C1ED9BF901F /* Pods-VideoLab_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1C03D43A1495060E78B8943F52F32901 /* Pods-VideoLab_Example.modulemap */,
+				AE256A5CB3509565B3127D73D00D1E50 /* Pods-VideoLab_Example-acknowledgements.markdown */,
+				DF38DDCB5FF6CA48F52B5853AB966DA6 /* Pods-VideoLab_Example-acknowledgements.plist */,
+				7B7805A6953D6EBCDA4B7D76985C9242 /* Pods-VideoLab_Example-dummy.m */,
+				52DD32389424213D0430878826116FCE /* Pods-VideoLab_Example-frameworks.sh */,
+				690B9E17AD5A79149AF7661B29A37F12 /* Pods-VideoLab_Example-Info.plist */,
+				8B2076A6451749051D4C1AF9C2F4DDCD /* Pods-VideoLab_Example-umbrella.h */,
+				6BF96B8DA7210931832799067C7AEC8A /* Pods-VideoLab_Example.debug.xcconfig */,
+				6A0E0F4CD52799D811B934478E75377A /* Pods-VideoLab_Example.release.xcconfig */,
+			);
+			name = "Pods-VideoLab_Example";
+			path = "Target Support Files/Pods-VideoLab_Example";
+			sourceTree = "<group>";
+		};
 		C3A1D35848C700EC2966A72CF331C324 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -1084,8 +1055,8 @@
 				5D53E00C2F4EC0A28BBDFCB4F1495F80 /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				3448CF379317C3C06FE0D9AC804B1D15 /* Pods */,
-				2CF4162A0894115F0EBCC99D8E0E3E57 /* Products */,
-				A9355A43CA97CAA77B596292C8F1DC59 /* Targets Support Files */,
+				4870DFE93BB502B9E499C0A684C6688D /* Products */,
+				780CEDFECB0CE5BFDBD31A1DDF186D69 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1095,22 +1066,6 @@
 				23F1DF0B29AB2C3D4BC5CC1E00F4CF21 /* Images.xcassets */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		E990AC13DDEE2BD6C47EEF1C628866E4 /* Pods-VideoLab_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				8FF89E04D31908555CA8534259A4AD52 /* Pods-VideoLab_Tests.modulemap */,
-				873ED94228A7F2D0FA6CFC47983FDDDB /* Pods-VideoLab_Tests-acknowledgements.markdown */,
-				15C96A63BBFD5E689C25EDE8883793C8 /* Pods-VideoLab_Tests-acknowledgements.plist */,
-				D40DF8C86563A495C4015E2DE2F2E300 /* Pods-VideoLab_Tests-dummy.m */,
-				5F5F2927AEABAEBDC0E9E8D3FC9372FA /* Pods-VideoLab_Tests-Info.plist */,
-				98C3A1A2FA55FF000CF01A88B65CD744 /* Pods-VideoLab_Tests-umbrella.h */,
-				B155ED92B5A077E06FA9B1AC9672DC6F /* Pods-VideoLab_Tests.debug.xcconfig */,
-				A801EC913CE490FADF7A969F49AEF17B /* Pods-VideoLab_Tests.release.xcconfig */,
-			);
-			name = "Pods-VideoLab_Tests";
-			path = "Target Support Files/Pods-VideoLab_Tests";
 			sourceTree = "<group>";
 		};
 		EC9C530E00CDDC083FAD22B730F86129 /* Support Files */ = {
@@ -1234,14 +1189,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		230B9D3FA6BBE66AE3613B89A5D552D5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD7AB41BF3866FF60372F41A7E458278 /* Pods-VideoLab_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5FA4790A32ECD84F2CEA55509107BD0A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1478,25 +1425,6 @@
 			productReference = BFCB2D5C605270A32522299AED3B5AE6 /* PKHUD-PKHUDResources */;
 			productType = "com.apple.product-type.bundle";
 		};
-		B7780C4838F1296EA0BCB2A944282CD7 /* Pods-VideoLab_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A38C91BEDA1D7099B18060A099C1BFD9 /* Build configuration list for PBXNativeTarget "Pods-VideoLab_Tests" */;
-			buildPhases = (
-				230B9D3FA6BBE66AE3613B89A5D552D5 /* Headers */,
-				1295D9706398057C45817716B4857059 /* Sources */,
-				6A2BC2449943EF1839F440C6C6229CA4 /* Frameworks */,
-				0082354FC1284AE6FE219517762658AD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				42B6C1E226F970272D6F472435CE8ACE /* PBXTargetDependency */,
-			);
-			name = "Pods-VideoLab_Tests";
-			productName = Pods_VideoLab_Tests;
-			productReference = 485DF978C439EA0C1CCBDCC540823586 /* Pods-VideoLab_Tests */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1515,7 +1443,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 2CF4162A0894115F0EBCC99D8E0E3E57 /* Products */;
+			productRefGroup = 4870DFE93BB502B9E499C0A684C6688D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1523,7 +1451,6 @@
 				364873017BA37260EF589D44B6B73D21 /* PKHUD */,
 				A7F7332F1050B42A501616421AC869EB /* PKHUD-PKHUDResources */,
 				A788278E713EEC517380E3C6AA693DB9 /* Pods-VideoLab_Example */,
-				B7780C4838F1296EA0BCB2A944282CD7 /* Pods-VideoLab_Tests */,
 				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 				90CEAAB26B5599871DFF2C5EEDC63120 /* VideoLab */,
 			);
@@ -1531,13 +1458,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0082354FC1284AE6FE219517762658AD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		409F0A5B1AF492314B258EA970409A19 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1586,14 +1506,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1295D9706398057C45817716B4857059 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D6033891BF0874345C1E6B96DD18E84B /* Pods-VideoLab_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		28235C60E4CC11FBD300DEFC8298B651 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1824,12 +1736,6 @@
 			target = 364873017BA37260EF589D44B6B73D21 /* PKHUD */;
 			targetProxy = ADF05640E7AC384989DEA0993AEFB316 /* PBXContainerItemProxy */;
 		};
-		42B6C1E226F970272D6F472435CE8ACE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-VideoLab_Example";
-			target = A788278E713EEC517380E3C6AA693DB9 /* Pods-VideoLab_Example */;
-			targetProxy = 3D10352D7D0EB1D98A9CFA96E497F526 /* PBXContainerItemProxy */;
-		};
 		4D5E9FC632A67C4C42039D4B1C4F9064 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VideoLab;
@@ -1853,7 +1759,7 @@
 /* Begin XCBuildConfiguration section */
 		1025EFC53431C834617AB9C96434CC51 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5483997C6CBEFBA9BC53D9A87DDDF09D /* Pods-VideoLab_Example.debug.xcconfig */;
+			baseConfigurationReference = 6BF96B8DA7210931832799067C7AEC8A /* Pods-VideoLab_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -1863,6 +1769,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MXMSC4DCDK;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1879,6 +1786,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1890,12 +1798,14 @@
 			baseConfigurationReference = 4A332A10B179F1B1519CAB0E9AD91080 /* PKHUD.release.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
+				DEVELOPMENT_TEAM = 44267PHH83;
 				IBSC_MODULE = PKHUD;
 				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = PKHUDResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -1912,13 +1822,14 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 44267PHH83;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
 				PRODUCT_MODULE_NAME = SnapKit;
@@ -1926,7 +1837,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1944,13 +1855,14 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 44267PHH83;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
 				PRODUCT_MODULE_NAME = PKHUD;
@@ -1958,7 +1870,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1976,13 +1888,14 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MXMSC4DCDK;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/LookinServer/LookinServer-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LookinServer/LookinServer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LookinServer/LookinServer.modulemap";
 				PRODUCT_MODULE_NAME = LookinServer;
@@ -1990,7 +1903,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2008,6 +1921,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 44267PHH83;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2040,13 +1954,14 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MXMSC4DCDK;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/PKHUD/PKHUD-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/PKHUD/PKHUD-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PKHUD/PKHUD.modulemap";
 				PRODUCT_MODULE_NAME = PKHUD;
@@ -2054,7 +1969,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2072,13 +1987,14 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MXMSC4DCDK;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
 				PRODUCT_MODULE_NAME = SnapKit;
@@ -2086,81 +2002,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		71BBEB4308C22D9F55188F5BE310540B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B155ED92B5A077E06FA9B1AC9672DC6F /* Pods-VideoLab_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		84AB329914302A6D0C2955D707141822 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A801EC913CE490FADF7A969F49AEF17B /* Pods-VideoLab_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VideoLab_Tests/Pods-VideoLab_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2234,13 +2081,14 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 44267PHH83;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/LookinServer/LookinServer-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LookinServer/LookinServer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/LookinServer/LookinServer.modulemap";
 				PRODUCT_MODULE_NAME = LookinServer;
@@ -2248,7 +2096,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2258,7 +2106,7 @@
 		};
 		B2BA64FE9E8808D70C8EBC40E96EFCB0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE62B45CD271EF3BFBD805CC0D1EE924 /* Pods-VideoLab_Example.release.xcconfig */;
+			baseConfigurationReference = 6A0E0F4CD52799D811B934478E75377A /* Pods-VideoLab_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -2268,6 +2116,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 44267PHH83;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2284,6 +2133,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2362,12 +2212,14 @@
 			baseConfigurationReference = 6C9E6AF67868ECEBBCCDF9BD090A8958 /* PKHUD.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PKHUD";
+				DEVELOPMENT_TEAM = MXMSC4DCDK;
 				IBSC_MODULE = PKHUD;
 				INFOPLIST_FILE = "Target Support Files/PKHUD/ResourceBundle-PKHUDResources-PKHUD-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_NAME = PKHUDResources;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -2384,6 +2236,7 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MXMSC4DCDK;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -2458,15 +2311,6 @@
 			buildConfigurations = (
 				1025EFC53431C834617AB9C96434CC51 /* Debug */,
 				B2BA64FE9E8808D70C8EBC40E96EFCB0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A38C91BEDA1D7099B18060A099C1BFD9 /* Build configuration list for PBXNativeTarget "Pods-VideoLab_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71BBEB4308C22D9F55188F5BE310540B /* Debug */,
-				84AB329914302A6D0C2955D707141822 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
