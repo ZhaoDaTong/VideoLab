@@ -48,6 +48,7 @@ public class PHAssetImageSource: ImageSource {
 //                defer {
                     self.isLoaded = true
 //                }
+                self.size = CGSize(width: cgImage.width, height: cgImage.height)
                 self.texture = Texture.makeTexture(cgImage: cgImage)
                 completion(nil);
             } else {

@@ -81,8 +81,11 @@ class VLETimeLineViewController: UIViewController {
         guard !itemModelArray.isEmpty else {
             return
         }
+        // 渲染model增加model到渲染数组中
         stateModel.renderTrackItemModelArray.append(contentsOf: itemModelArray)
+        // 渲染model刷新item开始时间信息
         stateModel.refreshItemTime()
+        // 刷新UI显示
         reloadView()
         VLEMainConcreteMediator.shared.previewTimeLineItem(videoLab: buildVideolab())
     }
@@ -99,15 +102,19 @@ class VLETimeLineViewController: UIViewController {
 
     public func buildVideolab() -> VideoLab {
         var renderLayers: [RenderLayer] = []
+        // 遍历渲染model，增加renderLayer
         for item in stateModel.renderTrackItemModelArray {
             renderLayers.append(item.renderLayer)
         }
+#warning("暂时忽略，功能有bug")
         for item in stateModel.separateRenderTrackItemModelArray {
             renderLayers.append(item.renderLayer)
         }
+        // 初始化 RenderComposition
         let composition = RenderComposition()
         composition.renderSize = stateModel.renderSize
         composition.layers = renderLayers
+        // 根据RenderComposition初始化VideoLab
         return VideoLab.init(renderComposition: composition)
     }
 

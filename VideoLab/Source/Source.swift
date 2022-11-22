@@ -11,6 +11,8 @@ import AVFoundation
 public protocol Source {
     var selectedTimeRange: CMTimeRange { get set }
     var duration: CMTime { get set }
+    var size: CGSize { get set }
+    
     var isLoaded: Bool { get set }
     
     func load(completion: @escaping (NSError?) -> Void)

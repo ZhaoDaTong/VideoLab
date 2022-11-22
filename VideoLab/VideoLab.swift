@@ -64,10 +64,10 @@ public class VideoLab {
             return trackID
         }
 
-        // Step 1: Add video tracks
+        // Step 1: Add video tracks 增加视频track数组
         
-        // Substep 1: Generate videoRenderLayers sorted by start time.
-        // A videoRenderLayer can contain video tracks or the source of the layer is ImageSource.
+        // Substep 1: Generate videoRenderLayers sorted by start time. 为所有的视频renderLayer根据开始时间进行排序
+        // A videoRenderLayer can contain video tracks or the source of the layer is ImageSource. 根据renderLayer 创建 VideoRenderLayer
         videoRenderLayers = renderComposition.layers.filter {
             $0.canBeConvertedToVideoRenderLayer()
         }.sorted {
@@ -79,7 +79,7 @@ public class VideoLab {
         // Generate video track ID. This inline method is used in substep 2.
         // You can reuse the track ID if there is no intersection with some of the previous, otherwise increase an ID.
         var videoTrackIDInfo: [CMPersistentTrackID: CMTimeRange] = [:]
-        func videoTrackID(for layer: VideoRenderLayer) -> CMPersistentTrackID {
+        func generateVideoTrackID(for layer: VideoRenderLayer) -> CMPersistentTrackID {
             var videoTrackID: CMPersistentTrackID?
             for (trackID, timeRange) in videoTrackIDInfo {
                 if layer.timeRangeInTimeline.start > timeRange.end {
@@ -98,8 +98,8 @@ public class VideoLab {
             }
         }
         
-        // Substep 2: Add all VideoRenderLayer tracks from the timeline to the composition.
-        // Calculate minimum start time and maximum end time for substep 3.
+        // Substep 2: Add all VideoRenderLayer tracks from the timeline to the composition. 将所有videoRenderLayer增加到视频时间线数组中
+        // Calculate minimum start time and maximum end time for substep 3. 计算开始时间及结束时间
         var videoRenderLayersInTimeline: [VideoRenderLayer] = []
         videoRenderLayers.forEach { videoRenderLayer in
             if let videoRenderLayerGroup = videoRenderLayer as? VideoRenderLayerGroup {
@@ -109,20 +109,25 @@ public class VideoLab {
             }
         }
         
+        // 计算开始时间及结束时间
         let minimumStartTime = videoRenderLayersInTimeline.first?.timeRangeInTimeline.start
         var maximumEndTime = videoRenderLayersInTimeline.first?.timeRangeInTimeline.end
+        
+        // 将视频时间线数组中所有的videoRenderLayer中的视频track增加到 composition 中
         videoRenderLayersInTimeline.forEach { videoRenderLayer in
             if videoRenderLayer.renderLayer.source?.tracks(for: .video).first != nil {
-                let trackID = videoTrackID(for: videoRenderLayer)
+                // 初始化trackID
+                let trackID = generateVideoTrackID(for: videoRenderLayer)
+                // 视频track增加到 composition 中
                 videoRenderLayer.addVideoTrack(to: composition, preferredTrackID: trackID)
             }
-            
+            // 更新最大时间
             if maximumEndTime! < videoRenderLayer.timeRangeInTimeline.end {
                 maximumEndTime = videoRenderLayer.timeRangeInTimeline.end
             }
         }
         
-        // Substep 3: Add a blank video track for image or effect layers.
+        // Substep 3: Add a blank video track for image or effect layers. 为图片或者effect layer增加空的视频track，时长为时间线长度，需要一个视频文件
         // The track's duration is the same as timeline's duration.
         if let minimumStartTime = minimumStartTime, let maximumEndTime = maximumEndTime {
             let timeRange = CMTimeRange(start: minimumStartTime, end: maximumEndTime)
@@ -130,9 +135,9 @@ public class VideoLab {
             VideoRenderLayer.addBlankVideoTrack(to: composition, in: timeRange, preferredTrackID: videoTrackID)
         }
 
-        // Step 2: Add audio tracks
+        // Step 2: Add audio tracks 增加音频track数组
         
-        // Substep 1: Generate audioRenderLayers sorted by start time.
+        // Substep 1: Generate audioRenderLayers sorted by start time. 根据RenderLayers初始化AudioRenderLayer数组
         // A audioRenderLayer must contain audio tracks.
         let audioRenderLayers = renderComposition.layers.filter {
             $0.canBeConvertedToAudioRenderLayer()
@@ -142,7 +147,7 @@ public class VideoLab {
             AudioRenderLayer.makeAudioRenderLayer(renderLayer: $0)
         }
         
-        // Substep 2: Add tracks from the timeline to the composition.
+        // Substep 2: Add tracks from the timeline to the composition. 将所有AudioRenderLayer增加到音频时间线数组中
         // Since AVAudioMixInputParameters only corresponds to one track ID, the audio track ID is not reused. One audio layer corresponds to one track ID.
         audioRenderLayersInTimeline = []
         audioRenderLayers.forEach { audioRenderLayer in
@@ -152,6 +157,7 @@ public class VideoLab {
                 audioRenderLayersInTimeline.append(audioRenderLayer)
             }
         }
+        // 将音频时间线数组中所有的AudioRenderLayer中的音频track增加到 composition 中
         audioRenderLayersInTimeline.forEach { audioRenderLayer in
             if audioRenderLayer.renderLayer.source?.tracks(for: .audio).first != nil {
                 let trackID = increaseTrackID()

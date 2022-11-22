@@ -14,12 +14,15 @@ public class AVAssetSource: Source {
         self.asset = asset
         selectedTimeRange = CMTimeRange.zero
         duration = CMTime.zero
+        size = CGSize.zero
     }
     
     // MARK: - Source
     public var selectedTimeRange: CMTimeRange
     
     public var duration: CMTime
+    
+    public var size: CGSize
     
     public var isLoaded: Bool = false
     
@@ -28,6 +31,7 @@ public class AVAssetSource: Source {
         source.selectedTimeRange = CMTimeRange.zero
         source.duration = CMTime.zero
         source.isLoaded = false
+        source.size = self.size
         return source
     }
     
@@ -65,6 +69,7 @@ public class AVAssetSource: Source {
             if let videoTrack = self.tracks(for: .video).first {
                 // Make sure source's duration not beyond video track's duration
                 self.duration = videoTrack.timeRange.duration
+                self.size = videoTrack.naturalSize
             } else {
                 self.duration = asset.duration
             }

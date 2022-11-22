@@ -16,11 +16,18 @@ public class ImageSource: Source {
         self.cgImage = cgImage
         duration = CMTime(seconds: 3, preferredTimescale: 600) // Default duration
         selectedTimeRange = CMTimeRangeMake(start: CMTime.zero, duration: duration)
+        
+        if let image = cgImage {
+            size = CGSize(width: image.width, height: image.height)
+        } else {
+            size = CGSize.zero
+        }
     }
     
     public init() {
         duration = CMTime(seconds: 3, preferredTimescale: 600) // Default duration
         selectedTimeRange = CMTimeRangeMake(start: CMTime.zero, duration: duration)
+        size = CGSize.zero
     }
     
     public func copy() -> Source {
@@ -28,6 +35,7 @@ public class ImageSource: Source {
         source.isLoaded = false
         source.cgImage = self.cgImage
         source.texture = self.texture
+        source.size = self.size
         source.duration = CMTime(seconds: 3, preferredTimescale: 600) // Default duration
         source.selectedTimeRange = CMTimeRangeMake(start: CMTime.zero, duration: duration)
         return source
@@ -39,6 +47,8 @@ public class ImageSource: Source {
     public var duration: CMTime
     
     public var isLoaded: Bool = false
+    
+    public var size: CGSize
     
     public func load(completion: @escaping (NSError?) -> Void) {
         guard let cgImage = cgImage else {

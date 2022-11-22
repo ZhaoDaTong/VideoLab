@@ -16,6 +16,7 @@ public class PHAssetVideoSource: Source {
         self.phAsset = phAsset
         selectedTimeRange = CMTimeRange.zero
         duration = CMTime.zero
+        size = CGSize.zero
     }
     
     // MARK: - Source
@@ -24,6 +25,8 @@ public class PHAssetVideoSource: Source {
     public var duration: CMTime
     
     public var isLoaded: Bool = false
+    
+    public var size: CGSize
     
     public func load(completion: @escaping (NSError?) -> Void) {
         guard let phAsset = phAsset else {

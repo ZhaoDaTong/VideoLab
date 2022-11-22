@@ -37,6 +37,8 @@ class VLEDemoViewController : UITableViewController{
                 return layerGroupDemo()
             } else if indexPath.row == 6 {
                 return transition2Demo()
+            } else if indexPath.row == 7 {
+                return imageVideoDemo()
             }
             
             return simpleDemo()
@@ -76,6 +78,8 @@ class VLEDemoViewController : UITableViewController{
                 return "Layer Group Demo"
             } else if indexPath.row == 6 {
                 return "Transition Demo"
+            } else if indexPath.row == 7 {
+                return "Image Demo"
             } else {
                 return "Simple Demo"
             }
@@ -86,7 +90,7 @@ class VLEDemoViewController : UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 8
     }
     
     // MARK: - Demo
@@ -553,6 +557,34 @@ class VLEDemoViewController : UITableViewController{
         let composition = RenderComposition()
         composition.renderSize = CGSize(width: 1280, height: 720)
         composition.layers = [layerGroup1, layerGroup2]
+        
+        // 3. VideoLab
+        let videoLab = VideoLab(renderComposition: composition)
+        
+        return videoLab
+    }
+    
+    func imageVideoDemo() -> VideoLab {
+        // 1.1 LayerGroup1
+        var timeRange = CMTimeRange(start: CMTime.zero, duration: CMTime(seconds: 5, preferredTimescale: 600))
+        let image = UIImage(named: "image1.JPG")
+        let imageSource = ImageSource(cgImage: image?.cgImage)
+        imageSource.selectedTimeRange = CMTimeRange(start: CMTime.zero, duration: timeRange.duration)
+        timeRange = imageSource.selectedTimeRange
+        let renderLayer1 = RenderLayer(timeRange: timeRange, source: imageSource)
+
+        let canvasSize = CGSize(width: 1008, height: 756)
+        
+        let size = AVMakeRect(aspectRatio: imageSource.size, insideRect: CGRect(x: 0, y: 0, width: canvasSize.width, height: canvasSize.height))
+        let ratio = Float(size.width) / Float(imageSource.size.width)
+        let center = CGPoint(x: 0.5, y: 0.5)
+        let transform = Transform(center: center, rotation: 0, scale: ratio)
+        renderLayer1.transform = transform
+        
+        // 2. Composition
+        let composition = RenderComposition()
+        composition.renderSize = canvasSize
+        composition.layers = [renderLayer1]
         
         // 3. VideoLab
         let videoLab = VideoLab(renderComposition: composition)
