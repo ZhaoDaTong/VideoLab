@@ -6,7 +6,7 @@
 //  Copyright © 2020 Chocolate. All rights reserved.
 //
 
-import Foundation
+import CoreMedia
 
 public class LookupFilter: BasicOperation {
     public var intensity: Float = 1.0 {
@@ -19,5 +19,11 @@ public class LookupFilter: BasicOperation {
         super.init(fragmentFunctionName: "lookupFragment", numberOfInputs: 1)
         
         ({ intensity = 1.0 })()
+    }
+    
+    public override func updateAnimationValues(at time: CMTime) {
+        if let intensity = KeyframeAnimation.value(for: "intensity", at: time, animations: animations) {
+            self.intensity = intensity
+        }
     }
 }

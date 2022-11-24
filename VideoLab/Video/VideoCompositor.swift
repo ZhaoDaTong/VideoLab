@@ -65,10 +65,11 @@ class VideoCompositor: NSObject, AVVideoCompositing {
     
     // MARK: - Private
     func newRenderedPixelBufferForRequest(_ request: AVAsynchronousVideoCompositionRequest) -> CVPixelBuffer? {
+        // 使用上下文创建一个PixelBuffer
         guard let newPixelBuffer = renderContext?.newPixelBuffer() else {
             return nil
         }
-        
+        // 根据PixelBuffer及request使用layerCompositor进行处理
         layerCompositor.renderPixelBuffer(newPixelBuffer, for: request)
         
         return newPixelBuffer

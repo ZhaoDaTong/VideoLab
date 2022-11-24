@@ -29,7 +29,7 @@ public struct Color {
     public static let blue = Color(red:0.0, green:0.0, blue:1.0, alpha:1.0)
     public static let transparent = Color(red:0.0, green:0.0, blue:0.0, alpha:0.0)
     
-    public static var clearColor = Color.black
+    public static var clearColor = Color.transparent
     public static var mtlClearColor: MTLClearColor {
         get {
             return MTLClearColorMake(Double(clearColor.red), Double(clearColor.green), Double(clearColor.blue), Double(clearColor.alpha))

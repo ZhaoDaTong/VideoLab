@@ -100,7 +100,7 @@ class VLEDemoViewController : UITableViewController{
         var asset = AVAsset(url: url!)
         var source = AVAssetSource(asset: asset)
         source.selectedTimeRange = CMTimeRange(start: CMTime.zero, duration: asset.duration)
-        var timeRange = source.selectedTimeRange
+        let timeRange = source.selectedTimeRange
         let renderLayer1 = RenderLayer(timeRange: timeRange, source: source)
         
         // 1. Layer 2
@@ -108,14 +108,32 @@ class VLEDemoViewController : UITableViewController{
         asset = AVAsset(url: url!)
         source = AVAssetSource(asset: asset)
         source.selectedTimeRange = CMTimeRange(start: CMTime.zero, duration: asset.duration)
-        timeRange = source.selectedTimeRange
-        timeRange.start = CMTimeRangeGetEnd(renderLayer1.timeRange)
         let renderLayer2 = RenderLayer(timeRange: timeRange, source: source)
+        
+        let center = CGPoint(x: 0.5, y: 0.5)
+        let transform1 = Transform(center: center, rotation: 0.01, scale: 0.2)
+        renderLayer2.transform = transform1
+        
+        let renderLayerGroup = RenderLayerGroup(timeRange: timeRange)
+        renderLayerGroup.layers = [renderLayer1, renderLayer2]
+        
+        let operationTimeRange = CMTimeRange(start: CMTime(seconds: 1, preferredTimescale: 600), duration: CMTime(seconds: 5, preferredTimescale: 600))
+        let teL = RenderLayer(timeRange: operationTimeRange)
+        teL.layerLevel = 10
+        let filter = LookupFilter()
+        filter.addTexture(lutTextures[1], at: 0)
+
+        let keyTimes = [CMTime.zero, operationTimeRange.end - operationTimeRange.start]
+        let animation = KeyframeAnimation(keyPath: "intensity",
+                                      values: [0.0, 1.0],
+                                      keyTimes: keyTimes, timingFunctions: [.quarticEaseOut])
+        filter.animations = [animation]
+        teL.operations = [filter]
         
         // 2. Composition
         let composition = RenderComposition()
         composition.renderSize = CGSize(width: 1280, height: 720)
-        composition.layers = [renderLayer1, renderLayer2]
+        composition.layers = [renderLayerGroup, teL]
 
         // 3. VideoLab
         let videoLab = VideoLab(renderComposition: composition)
@@ -572,7 +590,8 @@ class VLEDemoViewController : UITableViewController{
         imageSource.selectedTimeRange = CMTimeRange(start: CMTime.zero, duration: timeRange.duration)
         timeRange = imageSource.selectedTimeRange
         let renderLayer1 = RenderLayer(timeRange: timeRange, source: imageSource)
-
+        renderLayer1.layerLevel = 1
+        
         let canvasSize = CGSize(width: 1008, height: 756)
         
         let size = AVMakeRect(aspectRatio: imageSource.size, insideRect: CGRect(x: 0, y: 0, width: canvasSize.width, height: canvasSize.height))
@@ -581,10 +600,30 @@ class VLEDemoViewController : UITableViewController{
         let transform = Transform(center: center, rotation: 0, scale: ratio)
         renderLayer1.transform = transform
         
+        let image1 = UIImage(named: "image2.HEIC")
+        let imageSource1 = ImageSource(cgImage: image1?.cgImage)
+//        imageSource1.selectedTimeRange = CMTimeRange(start: CMTime.zero, duration: timeRange.duration)
+        let rrr = CMTimeRange(start: CMTime.zero, duration: CMTime(seconds: 1, preferredTimescale: 600))
+        let renderLayer2 = RenderLayer(timeRange: rrr, source: imageSource1)
+        let transform1 = Transform(center: center, rotation: 0, scale: 0.2)
+        renderLayer2.transform = transform1
+        
+        let image3 = UIImage(named: "image3.HEIC")
+        let imageSource3 = ImageSource(cgImage: image3?.cgImage)
+//        imageSource3.selectedTimeRange = CMTimeRange(start: CMTime.zero, duration: timeRange.duration)
+        let eee = CMTimeRange(start: CMTime(seconds: 1, preferredTimescale: 600), duration: CMTime(seconds: 1, preferredTimescale: 600))
+        let renderLayer3 = RenderLayer(timeRange: eee, source: imageSource3)
+        let transform3 = Transform(center: CGPoint(x: 0.25, y: 0.25), rotation: 0, scale: 0.2)
+        renderLayer3.transform = transform3
+        
+        let renderLayerGroup = RenderLayerGroup(timeRange: CMTimeRange(start: CMTime.zero, duration: CMTime(seconds: 2, preferredTimescale: 600)))
+        renderLayerGroup.layers = [renderLayer2, renderLayer3]
+        renderLayerGroup.layerLevel = 10
+        
         // 2. Composition
         let composition = RenderComposition()
         composition.renderSize = canvasSize
-        composition.layers = [renderLayer1]
+        composition.layers = [renderLayer1, renderLayerGroup]
         
         // 3. VideoLab
         let videoLab = VideoLab(renderComposition: composition)

@@ -173,12 +173,16 @@ public class VideoLab {
         // TODO: optimize make performance, like return when exist
         
         // Convert videoRenderLayers to videoCompositionInstructions
+        // videoRenderLayers转换为videoCompositionInstructions（视频配置信息）
         
         // Step 1: Put the layer start time and end time on the timeline, each interval is an instruction. Then sort by time
         // Make sure times contain zero
+        // 得到所有的videoRenderLayers的时间信息（开始时间及结束时间），并进行排序
         var times: [CMTime] = [CMTime.zero]
         videoRenderLayers.forEach { videoRenderLayer in
+            // 得到开始时间
             let startTime = videoRenderLayer.timeRangeInTimeline.start
+            // 得到结束时间
             let endTime = videoRenderLayer.timeRangeInTimeline.end
             if !times.contains(startTime) {
                 times.append(startTime)
@@ -190,24 +194,32 @@ public class VideoLab {
         times.sort { $0 < $1 }
         
         // Step 2: Create instructions for each interval
+        // 为每个时间间隔创建 instructions（每个时间间隔可能存在多个Layer）
         var instructions: [VideoCompositionInstruction] = []
         for index in 0..<times.count - 1 {
+            // 得到开始时间
             let startTime = times[index]
+            // 得到下一个时间
             let endTime = times[index + 1]
+            // 初始化时间间隔对象
             let timeRange = CMTimeRange(start: startTime, end: endTime)
+            // 初始化layer数组
             var intersectingVideoRenderLayers: [VideoRenderLayer] = []
+            // 遍历所有layer数组，当layer时间存在与此时间间隔时，将layer加入数组
             videoRenderLayers.forEach { videoRenderLayer in
                 if !videoRenderLayer.timeRangeInTimeline.intersection(timeRange).isEmpty {
                     intersectingVideoRenderLayers.append(videoRenderLayer)
                 }
             }
-            
+            // 根据layerLevel进行排序
             intersectingVideoRenderLayers.sort { $0.renderLayer.layerLevel < $1.renderLayer.layerLevel }
+            // 根据layer数组创建VideoCompositionInstruction
             let instruction = VideoCompositionInstruction(videoRenderLayers: intersectingVideoRenderLayers, timeRange: timeRange)
             instructions.append(instruction)
         }
 
         // Create videoComposition. Specify frameDuration, renderSize, instructions, and customVideoCompositorClass.
+        // 配置 AVMutableVideoComposition 对象
         let videoComposition = AVMutableVideoComposition()
         videoComposition.frameDuration = renderComposition.frameDuration
         videoComposition.renderSize = renderComposition.renderSize
