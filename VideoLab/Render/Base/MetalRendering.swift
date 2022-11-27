@@ -92,6 +92,8 @@ func generateRenderPipelineState(vertexFunctionName:String,
             }
         }
         
+        // 得到reflection中所有的vertex uniform参数key值及locationIndex
+        
         var vertexUniforms: [String: UniformInfo] = [:]
         if let vertexArguments = reflection?.vertexArguments {
             for vertexArgument in vertexArguments where vertexArgument.type == .buffer {

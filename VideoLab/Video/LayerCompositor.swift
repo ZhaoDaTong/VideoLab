@@ -59,7 +59,7 @@ class LayerCompositor {
         // Step 1: Handle its own operations
         // Step 2: Blend with the previous output texture. The previous output texture is a read back renderbuffer
         func renderTextureLayer(_ sourceTexture: Texture) {
-            // 在sourceTexture上使用效果
+            // 在sourceTexture上应用效果
             for operation in videoRenderLayer.renderLayer.operations {
                 autoreleasepool {
                     if operation.shouldInputSourceTexture, let clonedSourceTexture = cloneTexture(from: sourceTexture) {
@@ -72,7 +72,7 @@ class LayerCompositor {
                 }
             }
             
-            // 在sourceTexture叠加到outputTexture上
+            // 把sourceTexture叠加到outputTexture上，会传入配置信息（叠加模式，叠加intensity，transform）
             blendOutputText(outputTexture,
                             with: sourceTexture,
                             blendMode: videoRenderLayer.renderLayer.blendMode,
@@ -140,7 +140,7 @@ class LayerCompositor {
             imageTexture.unlock()
         } else {
             // Layer without texture. All operations of the layer are applied to the previous output texture
-            // layer不存在texture，layer为其他操作layer（处理动画、效果等）
+            // layer不存在texture，layer为其他操作layer（处理效果）
             for operation in videoRenderLayer.renderLayer.operations {
                 autoreleasepool {
                     if operation.shouldInputSourceTexture, let clonedOutputTexture = cloneTexture(from: outputTexture) {
@@ -155,26 +155,38 @@ class LayerCompositor {
         }
     }
 
+    
+    /// PixelBuffer转为纹理，涉及YUV转RGBA
+    /// - Parameters:
+    ///   - pixelBuffer: 输入源
+    ///   - preferredTransform: transform
+    /// - Returns: 纹理对象
     private func bgraVideoTexture(from pixelBuffer: CVPixelBuffer, preferredTransform: CGAffineTransform) -> Texture? {
         var videoTexture: Texture?
+        // 得到输入源宽高
         let bufferWidth = CVPixelBufferGetWidth(pixelBuffer)
         let bufferHeight = CVPixelBufferGetHeight(pixelBuffer)
-
+        
+        // 得到输入源数据类型
         let pixelFormatType = CVPixelBufferGetPixelFormatType(pixelBuffer);
+        // 格式为YUV时，需进行YUV转RGBA纹理
         if pixelFormatType == kCVPixelFormatType_420YpCbCr8BiPlanarFullRange || pixelFormatType == kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange {
+            // 根据输入源数据，创建亮度纹理及色度纹理
             let luminanceTexture = Texture.makeTexture(pixelBuffer: pixelBuffer, pixelFormat: .r8Unorm, width:bufferWidth, height: bufferHeight, plane: 0)
             let chrominanceTexture = Texture.makeTexture(pixelBuffer: pixelBuffer, pixelFormat: .rg8Unorm, width: bufferWidth / 2, height: bufferHeight / 2, plane: 1)
             if let luminanceTexture = luminanceTexture, let chrominanceTexture = chrominanceTexture {
                 let videoTextureSize = CGSize(width: bufferWidth, height: bufferHeight).applying(preferredTransform)
                 let videoTextureWidth = abs(Int(videoTextureSize.width))
                 let videoTextureHeight = abs(Int(videoTextureSize.height))
+                // 创建最终的视频纹理
                 videoTexture = sharedMetalRenderingDevice.textureCache.requestTexture(width: videoTextureWidth, height: videoTextureHeight)
                 if let videoTexture = videoTexture {
                     videoTexture.lock()
-                    
+                    // 根据视频格式得到转换矩阵
                     let colorConversionMatrix = pixelFormatType == kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange ? YUVToRGBConversion.colorConversionMatrixVideoRange : YUVToRGBConversion.colorConversionMatrixFullRange
                     yuvToRGBConversion.colorConversionMatrix = colorConversionMatrix
                     let orientationMatrix = preferredTransform.normalizeOrientationMatrix()
+                    // 绑定纹理并进行绘制
                     yuvToRGBConversion.orientation = orientationMatrix
                     yuvToRGBConversion.addTexture(luminanceTexture, at: 0)
                     yuvToRGBConversion.addTexture(chrominanceTexture, at: 1)
@@ -187,6 +199,10 @@ class LayerCompositor {
         return videoTexture
     }
     
+    
+    /// 拷贝纹理
+    /// - Parameter sourceTexture: 输入的纹理
+    /// - Returns: 拷贝的纹理
     private func cloneTexture(from sourceTexture: Texture) -> Texture? {
         let textureWidth = sourceTexture.width
         let textureHeight = sourceTexture.height
@@ -201,6 +217,7 @@ class LayerCompositor {
         return cloneTexture
     }
     
+    /// 进行纹理叠加
     private func blendOutputText(_ outputTexture: Texture,
                                  with texture: Texture,
                                  blendMode: BlendMode,
@@ -210,6 +227,7 @@ class LayerCompositor {
         // Generate model, view, projection matrix
         let renderSize = CGSize(width: outputTexture.width, height: outputTexture.height)
         let textureSize = CGSize(width: texture.width, height: texture.height)
+        // 配置transfrom转换矩阵及原始矩阵
         let modelViewMatrix = transform.modelViewMatrix(textureSize: textureSize, renderSize: renderSize)
         let projectionMatrix = transform.projectionMatrix(renderSize: renderSize)
         
